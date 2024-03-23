@@ -3,7 +3,7 @@ import MainCta from "../../components/mainCta/MainCta.tsx";
 
 const Banner = () => {
     return (
-        <section className="section-1">
+        <section className="banner-home">
             <div className="left">
                 <div className="wrapper">
                     <h1 className="h1">Bienvenue <br/> chez Café Neko</h1>

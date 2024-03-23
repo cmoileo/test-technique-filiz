@@ -4,6 +4,7 @@
   display: block;
   width: fit-content;
   font-family: "Secondary bold";
+  transition: .3s ease-in-out;
 
   @include min(mobile) {
     font-size: ptr(18, mobile);
@@ -20,7 +21,13 @@
   @include min(desktop) {
     font-size: ptr(18, desktop);
     line-height: ptr(24, desktop);
-    padding: ptr(20, desktop) ptr(24, desktop);
-    border-radius: ptr(46, desktop)
+    padding: ptr(19, desktop) ptr(23, desktop);
+    border: 2px solid $color_main_green;
+    border-radius: ptr(46, desktop);
+
+    &:hover {
+      background-color: transparent;
+      color: $color_main_green;
+    }
   }
 }
