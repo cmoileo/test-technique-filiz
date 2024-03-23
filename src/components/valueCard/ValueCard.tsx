@@ -4,8 +4,8 @@ const ValueCard: React.FC<ValueCardProps> = ({ icon, alt, title, description }) 
     return (
         <article className="value-card">
             <img src={icon} alt={alt}/>
-            <h4 className="h4">{title}</h4>
-            <p className="p-m">{description}</p>
+            <h3 className="h3 color-dark">{title}</h3>
+            <p className="p-m color-dark">{description}</p>
         </article>
     );
 }

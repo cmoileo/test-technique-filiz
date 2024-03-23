@@ -1,3 +1,15 @@
 body {
   background-color: $color_light-grey;
 }
+
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid black;
+  transition: .2s ease-in-out;
+
+  &:focus {
+    border-bottom: 2px solid $color_main_green;
+    outline: none;
+  }
+}

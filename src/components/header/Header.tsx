@@ -2,7 +2,7 @@ import LogoHeader from "../../../public/images/logo.svg"
 
 const Header = () => {
     return (
-        <header>
+        <header className="main-header">
             <img id="website-logo" src={LogoHeader} alt="Website Logo"/>
             <nav>
                 <a href="#qui-sommes-nous" className="li color-dark">Qui sommes-nous ?</a>

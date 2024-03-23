@@ -1,0 +1,62 @@
+form.contact-form {
+  display: flex;
+  flex-direction: column;
+  @include min(mobile) {
+    width: 100%;
+    gap: ptr(25, mobile)
+  }
+  @include min(tablet) {
+    width: 100%;
+    gap: ptr(25, tablet)
+  }
+  @include min(desktop) {
+    width: ptr(653, desktop);
+    gap: ptr(32, desktop)
+  }
+
+  .wrapper {
+    display: flex;
+    @include min(mobile) {
+      width: 100%;
+      flex-direction: column;
+      gap: ptr(25, mobile)
+    }
+    @include min(tablet) {
+      width: 100%;
+      gap: ptr(25, tablet)
+    }
+    @include min(desktop) {
+      width: 100%;
+      gap: ptr(25, desktop);
+      flex-direction: row;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      label {
+        transition: .2s ease-in-out;
+      }
+
+      &:has(input:focus) label {
+        color: $color_main_green;
+        transform: translate(-5px, -5px);
+      }
+    }
+  }
+
+  button {
+    align-self: flex-end;
+    @include min(mobile) {
+      margin-top: ptr(7, mobile);
+    }
+    @include min(tablet) {
+      margin-top: ptr(7, tablet);
+    }
+    @include min(desktop) {
+      margin-top: 0;
+    }
+  }
+}

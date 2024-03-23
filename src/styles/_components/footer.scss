@@ -1,0 +1,34 @@
+footer.main-footer  {
+  display: flex;
+
+  @include min(mobile) {
+    padding: ptr(80, mobile) ptr(30, mobile);
+    flex-direction: column;
+    gap: ptr(50, mobile);
+  }
+  @include min(tablet) {
+    padding: ptr(80, tablet) ptr(30, tablet);
+    gap: ptr(50, tablet);
+  }
+  @include min(desktop) {
+    flex-direction: row;
+    padding: ptr(80, desktop);
+    gap: ptr(75, desktop);
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    @include min(mobile) {
+      width: 100%;
+      gap: ptr(32, mobile)
+    }
+    @include min(tablet) {
+      width: 50%;
+      gap: ptr(32, tablet)
+    }
+    @include min(desktop) {
+      gap: ptr(20, desktop)
+    }
+  }
+}
