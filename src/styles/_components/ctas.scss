@@ -6,8 +6,8 @@
   font-family: "Secondary bold";
 
   @include min(mobile) {
-    font-size: ptr(18, desktop);
-    line-height: ptr(24, desktop);
+    font-size: ptr(18, mobile);
+    line-height: ptr(24, mobile);
     padding: ptr(20, mobile) ptr(24, mobile);
     border-radius: ptr(46, mobile)
   }
