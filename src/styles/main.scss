@@ -2,6 +2,7 @@
 @import "_parameters/functions";
 @import "./_parameters/colors";
 @import "./_parameters/typos";
-@import "./_parameters/variables";
+@import "_parameters/global";
 
-@import "./_components/ctas.scss";
+@import "./_components/ctas";
+@import "./_components/header";
