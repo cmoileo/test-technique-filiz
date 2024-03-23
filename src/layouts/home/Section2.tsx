@@ -26,7 +26,7 @@ const Section2 = () => {
         }
     ]
     return (
-        <section id="qui-sommes-nous" className="home_section-2">
+        <section id="nos-valeurs" className="home_section-2">
             <h2 className="h2 color-main-green">Nos valeurs</h2>
             <div className="wrapper">
                 {valueCards.map((valueCard, index) => (

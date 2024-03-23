@@ -2,7 +2,7 @@ import ImageAboutUs from "../../../public/images/image-about-us.png"
 
 const Section1 = () => {
     return (
-        <section id="nos-valeurs" className="home_section-1 color-light-gold-bg">
+        <section id="qui-sommes-nous" className="home_section-1 color-light-gold-bg">
             <div className="left">
                 <img src={ImageAboutUs} alt="Une femme tenant une tasse de café dans ses mains"/>
             </div>
