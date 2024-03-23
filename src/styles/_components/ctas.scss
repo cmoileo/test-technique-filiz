@@ -1,0 +1,26 @@
+.main-cta {
+  background-color: $color_main_green;
+  color: $color_white;
+  display: block;
+  width: fit-content;
+  font-family: "Secondary bold";
+
+  @include min(mobile) {
+    font-size: ptr(18, desktop);
+    line-height: ptr(24, desktop);
+    padding: ptr(20, mobile) ptr(24, mobile);
+    border-radius: ptr(46, mobile)
+  }
+  @include min(tablet) {
+    font-size: ptr(18, tablet);
+    line-height: ptr(24, tablet);
+    padding: ptr(20, tablet) ptr(24, tablet);
+    border-radius: ptr(46, tablet)
+  }
+  @include min(desktop) {
+    font-size: ptr(18, desktop);
+    line-height: ptr(24, desktop);
+    padding: ptr(20, desktop) ptr(24, desktop);
+    border-radius: ptr(46, desktop)
+  }
+}
