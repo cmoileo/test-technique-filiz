@@ -4,14 +4,17 @@
     flex-direction: column-reverse;
     gap: ptr(30, mobile);
     padding: ptr(80, mobile) ptr(30, mobile);
+    margin-top: ptr(32, mobile);
   }
   @include min(tablet) {
     gap: ptr(30, tablet);
     padding: ptr(80, tablet) ptr(30, tablet);
+    margin-top: ptr(32, tablet);
   }
   @include min(desktop) {
     flex-direction: row;
     gap: ptr(100, desktop);
+    margin-top: ptr(80, desktop);
     align-items: center;
     padding: ptr(80, desktop);
   }
