@@ -1,0 +1,38 @@
+.value-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  @include min(mobile) {
+    gap: ptr(20, mobile);
+    padding: 0 ptr(17, mobile);
+    height: ptr(522, mobile);
+  }
+  @include min(tablet) {
+    gap: ptr(20, tablet);
+    padding: 0 ptr(17, tablet);
+    height: ptr(522, tablet);
+  }
+  @include min(desktop) {
+    gap: ptr(20, desktop);
+    padding: 0 ptr(17.5, desktop);
+    height: 100%;
+  }
+  img {
+    object-fit: contain;
+    @include min(mobile) {
+      height: ptr(88, mobile)
+    }
+    @include min(tablet) {
+      height: ptr(88, tablet)
+    }
+    @include min(desktop) {
+      height: ptr(88, desktop)
+    }
+  }
+  p {
+    text-align: center;
+  }
+}

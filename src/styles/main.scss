@@ -1,10 +1,13 @@
-@import "./_parameters/reset";
+@import "_parameters/reset";
 @import "_parameters/functions";
-@import "./_parameters/colors";
-@import "./_parameters/typos";
+@import "_parameters/colors";
+@import "_parameters/typos";
 @import "_parameters/global";
 
-@import "./_components/ctas";
-@import "./_components/header";
-@import "./_layouts/home/banner";
-@import "./_layouts/home/section-1";
+@import "_components/ctas";
+@import "_components/header";
+@import "_components/value-card";
+
+@import "_layouts/home/banner";
+@import "_layouts/home/section-1";
+@import "_layouts/home/section-2";

@@ -1,0 +1,38 @@
+.home_section-2 {
+  display: flex;
+  flex-direction: column;
+  @include min(mobile) {
+    margin: ptr(80, mobile) 0;
+    padding: 0 ptr(30, mobile);
+    gap: ptr(30, mobile)
+  }
+  @include min(tablet) {
+    margin: ptr(80, tablet) 0;
+    padding: 0 ptr(30, tablet);
+    gap: ptr(30, tablet)
+  }
+  @include min(desktop) {
+    margin: ptr(80, desktop) 0;
+    padding: ptr(80, desktop);
+    gap: ptr(60, desktop);
+  }
+  h2 {
+    margin: auto;
+    width: fit-content;
+  }
+  .wrapper {
+    display: flex;
+    @include min(mobile) {
+      flex-direction: column;
+      gap: ptr(30, mobile)
+    }
+    @include min(tablet) {
+      gap: ptr(30, tablet)
+    }
+    @include min(desktop) {
+      flex-direction: row;
+      gap: ptr(20, desktop);
+      height: ptr(496, desktop);
+    }
+  }
+}
