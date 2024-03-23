@@ -147,3 +147,20 @@
     line-height: ptr(21.6, desktop);
   }
 }
+
+.error {
+  font-family: 'Secondary medium', sans-serif;
+  color: red;
+  @include min(mobile) {
+    font-size: ptr(14, mobile);
+    line-height: ptr(20, mobile);
+  }
+  @include min(tablet) {
+    font-size: ptr(14, tablet);
+    line-height: ptr(20, tablet);
+  }
+  @include min(desktop) {
+    font-size: ptr(14, desktop);
+    line-height: ptr(20, desktop);
+  }
+}
