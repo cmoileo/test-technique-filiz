@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Main bold';
+  src: url('/public/fonts/Nohemi-Bold.woff') format('openType');
+}
+@font-face {
+  font-family: 'Main semi-bold';
+  src: url('/public/fonts/Nohemi-SemiBold.woff') format('openType');
+}
+@font-face {
+  font-family: 'Main medium';
+  src: url('/public/fonts/Nohemi-Medium.woff') format('openType');
+}
+@font-face {
+  font-family: 'Secondary bold';
+  src: url('/public/fonts/Proximanova-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Secondary medium';
+  src: url('/public/fonts/Proximanova-Medium.otf') format('truetype');
+}
+
+.h1 {
+  font-family: 'Main medium', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(45, mobile);
+    line-height: ptr(44.66, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(45, tablet);
+    line-height: ptr(44.66, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(64, desktop);
+    line-height: ptr(63, desktop);
+  }
+}
+
+
+.h2 {
+  font-family: 'Main semi-bold', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(35, mobile);
+    line-height: ptr(38.5, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(35, tablet);
+    line-height: ptr(38.5, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(56, desktop);
+    line-height: ptr(61.6, desktop);
+  }
+}
+
+.h3 {
+  font-family: 'Main bold', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(24, mobile);
+    line-height: ptr(32, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(24, tablet);
+    line-height: ptr(32, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(24, desktop);
+    line-height: ptr(32, desktop);
+  }
+}
+
+.p-l {
+  font-family: 'Secondary medium', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(20, mobile);
+    line-height: ptr(36, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(20, tablet);
+    line-height: ptr(36, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(20, desktop);
+    line-height: ptr(36, desktop);
+  }
+}
+
+.p-m {
+  font-family: 'Secondary medium', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(18, mobile);
+    line-height: ptr(26, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(18, tablet);
+    line-height: ptr(26, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(18, desktop);
+    line-height: ptr(26, desktop);
+  }
+}
+
+.p-s {
+  font-family: 'Secondary medium', sans-serif;
+  @include min(mobile) {
+    dont-size: ptr(16, mobile);
+    line-height: ptr(24, mobile);
+  }
+  @include min(tablet) {
+    dont-size: ptr(16, tablet);
+    line-height: ptr(24, tablet);
+  }
+  @include min(desktop) {
+    dont-size: ptr(16, desktop);
+    line-height: ptr(24, desktop);
+  }
+}
